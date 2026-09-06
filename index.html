@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self'; frame-src 'self' blob:; img-src data:; base-uri 'none'; form-action 'none'">
+<title>Visor GEDCOM</title>
+<link rel="stylesheet" href="visor.css">
+<script src="visor.js" defer></script>
+</head>
+<body>
+<main id="aviso"><h1>Visor GEDCOM</h1><p id="estado" role="status">Abriendo el árbol…</p><p id="ayuda" hidden>Abre el visor desde el enlace completo del README del repositorio privado.</p><noscript>Este visor necesita JavaScript para abrir el árbol cifrado.</noscript></main>
+<iframe id="visor" title="Árbol genealógico" sandbox="allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox" hidden></iframe>
+</body>
+</html>
