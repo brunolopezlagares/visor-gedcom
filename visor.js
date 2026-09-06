@@ -23,7 +23,7 @@
       link.rel = 'noopener noreferrer';
     }
     const frame = document.getElementById('visor');
-    frame.srcdoc = '<!doctype html>' + doc.documentElement.outerHTML;
+    frame.src = URL.createObjectURL(new Blob(['<!doctype html>' + doc.documentElement.outerHTML], {type:'text/html'}));
     frame.hidden = false;
     document.getElementById('aviso').hidden = true;
     // No persistir la clave en cookies o almacenamiento del navegador.
